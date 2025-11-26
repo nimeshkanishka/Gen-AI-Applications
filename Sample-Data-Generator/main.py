@@ -18,10 +18,10 @@ def generate_sample_data(data_fields: dict[str, list]) -> dict[str, Any]:
     Examples:
         generate_sample_data(
             data_fields={
-                "first_names": ["Alice", "Bob"],
-                "last_names": ["Smith", "Johnson"],
-                "ages": [28, 34],
-                "domains": ["example.com", "test.com"]
+                "firstName": ["Alice", "Bob"],
+                "lastName": ["Smith", "Johnson"],
+                "age": [28, 34],
+                "email": ["asmith@test.com", "bobjohnson@example.com"]
             }
         )
 
@@ -172,4 +172,5 @@ if __name__ == "__main__":
         print("-" * 100)
 
         # Update conversation history
+
         history += [HumanMessage(content=user_input), response]
